@@ -1,0 +1,43 @@
+.introContent {
+  position: relative;
+  margin-bottom: calc(var(--base) * 2);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  gap: var(--base) 40px;
+}
+
+.column {
+  grid-column-end: span 12;
+}
+
+.cols-half {
+  grid-column-end: span 6;
+}
+
+.cols-thirds {
+  grid-column-end: span 3;
+
+}
+
+@media (width <= 768px) {
+  .introContent {
+    margin-bottom: var(--base);
+  }
+  .grid {
+    grid-template-columns: repeat(6, 1fr);
+    gap: calc(var(--base) / 2) var(--base);
+  }
+  .cols-thirds {
+    grid-column-end: span 6;
+  }
+  .cols-half {
+    grid-column-end: span 6;
+  }
+  .column {
+    grid-column-end: span 6;
+  }
+}

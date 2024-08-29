@@ -1,0 +1,36 @@
+import React from 'react'
+
+import { Page } from '@/backend/types'
+import { Gutter } from '@/app/_components/Gutter'
+import { CMSLink } from '@/app/_components/Link'
+import RichText from '@/app/_components/RichText'
+import { VerticalPadding } from '@/app/_components/VerticalPadding'
+
+import './style.css'
+
+type Props = Extract<Page['layout'][0], { blockType: 'cta' }>
+
+export const CallToActionBlock: React.FC<
+  Props & {
+    id?: string
+  }
+> = ({ links, richText, invertBackground }) => {
+  return (
+    <Gutter>
+      <VerticalPadding
+        className="callToAction"
+      >
+        <div className={classes.wrap}>
+          <div className={classes.content}>
+            <RichText className={classes.richText} content={richText} />
+          </div>
+          <div className="linkGroup">
+            {(links || []).map(({ link }, i) => {
+              return <CMSLink key={i} {...link} />
+            })}
+          </div>
+        </div>
+      </VerticalPadding>
+    </Gutter>
+  )
+}

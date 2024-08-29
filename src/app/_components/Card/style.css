@@ -1,0 +1,83 @@
+
+.card  {
+  border: 1px var(--theme-elevation-200) solid;
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  padding: var(--base);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base) / 2);
+}
+
+.title {
+  margin: 0;
+}
+
+.titleLink {
+  text-decoration: none;
+}
+
+.centerAlign {
+  align-items: center;
+}
+
+.body {
+  flex-grow: 1;
+}
+
+.priceActions {
+  gap: var(--base);
+}
+
+.price {
+  font-weight: 600;
+  margin: 0;
+}
+
+.leader {
+  display: flex;
+  gap: var(--base);
+}
+
+.description {
+  margin: 0;
+}
+
+.mediaWrapper {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  aspect-ratio: 16 / 9;
+}
+
+.image {
+  object-fit: cover;
+}
+
+.placeholder {
+  background-color: var(--theme-elevation-50);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+@media (width <= 768px) {
+  .hideImageOnMobile {
+    display: none;
+  }
+  .content {
+    padding: calc(var(--base) / 2);
+    gap: calc(var(--base) / 4);
+  }
+  .actions {
+    flex-direction: column;
+    align-items: flex-start
+  }
+}

@@ -1,0 +1,29 @@
+.callToAction {
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  background-color: var(--theme-elevation-100);
+  color: var(--theme-elevation-1000);
+}
+
+.wrap {
+  display: flex;
+  gap: $spacer-h;
+  align-items: center;
+
+  @apply
+    sm:flex-column
+    sm:align-item-start
+}
+
+.content {
+  flex-grow: 1;
+}
+
+.linkGroup {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  flex-shrink: 0;
+}

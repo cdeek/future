@@ -1,0 +1,54 @@
+.button {
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-flex;
+  padding: 10px 24px;
+  border-radius: 10px;
+  font-family: inherit;
+  line-height: inherit;
+  font-size: inherit;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.label {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.appearance-default {
+  @apply bg-primary text-primary-foreground hover:bg-primary/90;
+}
+
+.appearance-secondary {
+  @apply bg-secondary text-secondary-foreground hover:bg-secondary/80;
+}
+
+.appearance-destructive {
+  @apply bg-destructive text-destructive-foreground hover:bg-destructive/90
+}
+
+.appearance-ghost {
+  @apply hover:bg-accent hover:text-accent-foreground;
+}
+
+.appearance-link {
+  @apply text-primary underline-offset-4 hover:underline
+}
+
+.appearance-outline {
+  @apply border border-input bg-background hover:bg-accent hover:text-accent-foreground
+}
+
+.appearance-none {
+  padding: 0;
+  color: inherit;
+}

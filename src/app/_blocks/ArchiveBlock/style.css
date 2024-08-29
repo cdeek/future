@@ -1,0 +1,8 @@
+.archiveBlock {
+  position: relative;
+}
+
+.introContent {
+  margin-bottom: calc(var(--base) * 2);
+  @apply sm:mb-[calc(var(--base) * 2)];
+}

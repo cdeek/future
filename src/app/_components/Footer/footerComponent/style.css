@@ -1,0 +1,34 @@
+.inclusion {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+  grid-template-columns: repeat(4 1fr );
+  margin: 100px 0;
+}
+@media (width => 1028px) {
+  .inclusion {
+    grid-template-columns: repeat(2 1fr );
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5px;
+  color: white;
+  @apply
+   bg-gray-800;
+}
+
+.wrap {
+  @apply
+    grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4
+}
+
+.socialLinks {
+  display: flex;
+  gap: 20px;
+}

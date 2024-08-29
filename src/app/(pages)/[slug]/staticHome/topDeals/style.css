@@ -1,0 +1,42 @@
+/* topdeals */
+.top-deals {
+  @apply
+    relative bottom-[50px] rounded-t-[35px] bg-white py-6 px-2 w-full text-center
+}
+
+.welcome span {
+     font-size: 30px;
+     display: inline-block;
+     animation: moveup 3s;
+   }
+   @keyframes moveup {
+     0% { transform: translateY(50px); }
+     10% { transform: translateY(0px); }
+     50% { transform: translateY(10px); }
+     100% { transform: translateY(30px); }
+   }
+   .welcome span:nth-child(2){ animation-delay: 0.2s; }
+   .welcome span:nth-child(3){ animation-delay: 0.4s; }
+   .welcome span:nth-child(4){ animation-delay: 0.6s; }
+   .welcome span:nth-child(5){ animation-delay: 0.8s; }
+   .welcome span:nth-child(6){ animation-delay: 1.0s; }
+   .welcome span:nth-child(7){ animation-delay: 1.2s; }
+   .welcome span:nth-child(8){ animation-delay: 1.4s; }
+   .welcome span:nth-child(9){ animation-delay: 1.6s; }
+   .welcome span:nth-child(10){ animation-delay: 1.8s; }
+
+.top-deals .con {
+  background-image: linear-gradient(#b0bbbf 60%, #fff 35%);
+  @apply
+    w-[95%] mt-16 mx-auto pt-4 rounded;
+}
+.top-deals .card-con {
+  @apply
+    flex mt-12 h-[190px] overflow-y-visible overflow-x-auto p-1
+    md:h-[400px];
+}
+.top-deals .card {
+  @apply
+    overflow-hidden w-[150px] min-w-[150px] mx-1 p-0 bg-[transparent]
+    md:mx-4 md:min-w-[300px] md:w-[300px];
+}

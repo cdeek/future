@@ -1,0 +1,4 @@
+.category-circle {
+  @apply
+  mx-auto  p-8 w-[120px] h-[120px] rounded-full bg-gray-200
+}
