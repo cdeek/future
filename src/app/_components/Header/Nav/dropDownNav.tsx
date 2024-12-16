@@ -29,7 +29,7 @@ import {
   Watch,
   Footprints
 } from "lucide-react";
-import { Button } from "@/components/ui/button"
+import { Button } from "../../ui/button"
 import {
   DropdownMenu,
   DropdownMenuTrigger,
@@ -43,7 +43,7 @@ import {
   DropdownMenuSub,
   DropdownMenuSubContent,
   DropdownMenuSubTrigger
-} from "@/components/ui/dropdown-menu"
+} from "../../ui/dropdown-menu"
 // import Logout from '../user/logout';
 
 export default function DropDownMenu() {

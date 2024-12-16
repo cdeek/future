@@ -2,7 +2,7 @@ import React from "react";
 
 import { AlertCircle, TriangleAlert, CircleCheckBig } from "lucide-react";
 
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "../ui/alert";
 
 const successStyle: string = "bg-[rgb(178, 255, 214)] text-[rgb(36, 51, 43)]";
 const warningStyle: string = "bg-[rgb(253, 255, 164)] tex-[rgb(51, 51, 33)]";

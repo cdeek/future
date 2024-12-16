@@ -2,6 +2,8 @@
 
 import { usePathname } from "next/navigation";
 
+import { Button } from '@/app/_components/Button';
+
 export default function NotFound() {
   const pathname = usePathname();
 
@@ -13,6 +15,3 @@ export default function NotFound() {
     </div>
   );
 }
-
-import { Button } from '@/components/Button'
-

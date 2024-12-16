@@ -3,22 +3,20 @@
   justify-content: center;
   gap: 30px;
   padding: 0;
-  grid-template-columns: repeat(4 1fr );
-  margin: 100px 0;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 10px;
 }
-@media (width => 1028px) {
+@media (width <= 1028px) {
   .inclusion {
-    grid-template-columns: repeat(2 1fr );
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 .footer {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   margin-top: 5px;
-  color: white;
+  color: gray;
   @apply
    bg-gray-800;
 }

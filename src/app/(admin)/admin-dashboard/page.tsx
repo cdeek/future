@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import Image from "next/image";
 
-import { Button } from "@/components/ui/button";
+import { Button } from "../../_components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+} from "../../_components/ui/card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "../../_components/ui/tabs";
 import { CalendarDateRangePicker } from "../_components/date-range-picker";
 
 import { Overview } from "../_components/overview";

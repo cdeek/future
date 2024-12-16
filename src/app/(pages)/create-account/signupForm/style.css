@@ -47,7 +47,7 @@
   right: 6px;
 }
 
-@media (width <= var(--breakpoint-s-width)) {
+@media (width <= 768px) {
   .formContainer {
     padding: 20px;
     backdrop-filter: blur(30px);

@@ -13,10 +13,10 @@ import {
   CardFooter,
   CardHeader,
   CardTitle,
-} from "@/components/ui/card";
-import { Button } from "@/components/Button";
-import { Input } from "@/components/ui/input";
-import { Message } from "@/components/Message";
+} from "@/app/_components/ui/card";
+import { Button } from "@/app/_components/Button";
+import { Input } from "@/app/_components/ui/input";
+import { Message } from "@/app/_components/Message";
 import { Eye, EyeOff } from "lucide-react";
 import { useAuth } from "../../../_providers/Auth";
 
@@ -52,7 +52,6 @@ const LoginForm: React.FC = () => {
         else router.push("/");
       } catch (err) {
         setError(err.message);
-        console.log(err);
       }
     },
     [login, router],

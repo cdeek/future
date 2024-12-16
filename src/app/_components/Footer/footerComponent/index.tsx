@@ -5,8 +5,8 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 import { noHeaderFooterUrls, inclusions } from '@/app/_constants';
-import { Gutter } from '@/components/Gutter';
-import ChangeTheme from '@/components/ChangeTheme';
+import { Gutter } from '../../Gutter';
+import ChangeTheme from '../../ChangeTheme';
 
 import './style.css';
 
@@ -15,11 +15,11 @@ const showYear = new Date().getFullYear();
 export default function FooterComponent({ footer }) {
   const navItems = footer?.navItems || []
   const pathname = usePathname();
-  const style = noHeaderFooterUrls.includes(pathname) ? "hidden" : "mt-auto";
+  const style = noHeaderFooterUrls.includes(pathname) ? "hidden" : "bottom-0 mt-4";
 
   return (
       <footer className={style}>
-        <Gutter>
+        
           <ul className="inclusions">
             {inclusions.map((inclusion, index) => (
               <li key={index}>
@@ -35,7 +35,7 @@ export default function FooterComponent({ footer }) {
               </li>
             ))}
           </ul>
-        </Gutter>
+        
         <div className="footer">
           <Gutter>
             <div className="wrap">

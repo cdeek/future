@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useFetchHeader } from '@/app/_api/fetchGlobals';
 import HeaderComponent from './HeaderComponent';
 
+import "./style.css";
+
 export default async function Header() {
   let header: any | null = null
 

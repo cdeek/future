@@ -6,8 +6,8 @@ import { notFound } from 'next/navigation';
 import { Page } from '@/backend/types';
 import useFetchDoc from "@/app/_api/fetchDoc";
 import useFetchDocs from '@/app/_api/fetchDocs';
-// import { Blocks } from '@/components/Blocks';
-// import { Hero } from '@/app/components/Hero';
+// import { Blocks } from '@/app/_components/Blocks';
+// import { Hero } from '@/app/_components/Hero';
 // import { generateMeta } from '@/app/_utilities/generateMeta';
  import StaticHome from './staticHome';
 

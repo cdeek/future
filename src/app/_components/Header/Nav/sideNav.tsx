@@ -15,7 +15,7 @@ import {
   Watch,
   Footprints
 } from "lucide-react";
-import { Separator } from '@/components/ui/separator';
+import { Separator } from '../../ui/separator';
 // import Logout from '../../user/logout';
 
 

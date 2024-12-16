@@ -36,7 +36,7 @@
   margin-top: 24px;
 }
 
-@media (screen(sm)) {
+@media (width <= 768px) {
   .signup {
     grid-template-columns: 1fr;
     background-size: cover;

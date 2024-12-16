@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from 'react';
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/app/_components/ui/scroll-area";
 import Image from 'next/image';
 import Link from 'next/link';
 

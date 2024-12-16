@@ -1,11 +1,11 @@
 import { Suspense } from 'react';
-// import LoadingSmall from "@/components/loading";
+// import LoadingSmall from "@/app/_components/loading";
 import Image from 'next/image';
 import SlideShow from './slideShow';
 import TopDeals from './topDeals';
 import Categories from './exploreSomeCategories';
 // import Recommends from './recommends';
-import QuoteMachine from '@/components/QuoteGenerator';
+import QuoteMachine from '@/app/_components/QuoteGenerator';
 
 
 export default function StaticHome() {
